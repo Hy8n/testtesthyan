@@ -1,0 +1,69 @@
+@media screen and (max-width: 1200px) {
+    /* nav-bar */
+    .nav-myimg{
+        display: none;
+    }
+    .nav-container>*:nth-child(2) {
+        border-right: none;
+    }
+
+    /* about container */
+
+    #target{
+        margin: 0px;
+        margin-top: 20%;
+        transform: none;
+    }
+
+    #personal-info {
+        margin: 0;
+        margin-top: 20%;
+        transform: none;       
+    }
+
+    /* Job */
+    .job-container {
+        display: block;
+        columns: 2;
+        height: none;
+    }
+
+    .job-box {
+        break-inside: avoid;
+        margin-top: 0 !important;
+        margin-bottom: 20px;
+    }
+
+        /* Giá trị height cho từng box */
+        /* 400 450 500 550 600 650 (px) */
+    .job-container>*:nth-child(1){
+        height:650px;
+    }
+
+    .job-container>*:nth-child(2){
+        height: 500px;
+    }
+    .job-container>*:nth-child(3){
+        height: 450px;
+    }
+    .job-container>*:nth-child(4){
+        height: 350px;
+    }
+    .job-container>*:nth-child(5){
+        height: 250px;
+    }
+    .job-container>*:nth-child(6){
+        height: 400px;
+    }
+
+    /* Chứng chỉ */
+    .cer-minibox{
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* Dự án */
+    tr>td:first-child{
+        width: 50px !important;
+    }
+}

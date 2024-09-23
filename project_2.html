@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digiatal Hyan CV</title>
+    <link rel="stylesheet" href="./css/project.css">
+
+    <!-- add css boostrap link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css" rel="stylesheet" />
+    <!-- .... -->
+    <!-- Icon -->
+    <link href='https://css.gg/flag-alt.css' rel='stylesheet'>
+    <!-- .... -->
+
+    <!-- Icon -->
+    <script src="https://kit.fontawesome.com/45fcfb1434.js" crossorigin="anonymous"></script>
+    <!-- .... -->
+</head>
+
+<body>
+    <!-- Add css bundle js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <!-- .... -->
+    <!-- <header class="bg-dark">
+        <nav class="navbar container-fluid">
+            <a href="#" class="nav-item text-light">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+                </svg>
+                <span>Home</span>
+            </a>
+            <ul id="else-project">
+                <li style="display: inline;">
+                    <a href="" class="nav-item text-light">
+                        project 1
+                    </a>
+                </li>
+                <li style="display: inline;">
+                    <a href="" class="nav-item text-light">
+                        project 2
+                    </a>
+                </li>
+                <li style="display: inline;">
+                    <a href="" class="nav-item text-light">
+                        project 3
+                    </a>
+                </li>
+                <li style="display: inline;">
+                    <a href="" class="nav-item text-light">
+                        project 4
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header> -->
+    <header id="header" class="bg-dark text-light p-2 text-center">
+        <div class="footer-content">
+            <p>Trang web lưu trữ tài liệu học tập</p>
+        </div>
+    </header>
+    
+
+    <section class="bg-secondary pt-4 pb-4">
+        <div class="container-fluid grid">
+
+            <!-- Goals: Các mục tiêu của dự án -->
+            <div class="project-type bg-light" id="p-10 goals">
+                <h1 class="project-item-title">Goals</h1>
+                <div class="project-item-content">
+                    <div class="goal-content">
+                        <i class="fa-solid fa-flag-checkered"></i>
+                        <div>
+                            <h5>Goal 1</h5>
+                            <p>Tạo trang chủ để hiển thị ý nghĩa trang web</p>
+                        </div>
+                    </div>
+                    <div class="goal-content">
+                        <i class="fa-solid fa-flag-checkered"></i>
+                        <div>
+                            <h5>Goal 2</h5>
+                            <p>Tạo các mục để lưu trữ dữ liệu các nhân theo mục từ ngày/tháng/năm->Thứ tự chữ cái</p>
+                        </div>
+                    </div>
+                    <div class="goal-content">
+                        <i class="fa-solid fa-flag-checkered"></i>
+                        <div>
+                            <h5>Goal 3</h5>
+                            <p>Đa dạng hoá chuẩn đầu nhập và xuất cho trang web</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Team: Các thành viên trong nhóm gồm những ai -->
+            <div class="project-type bg-light" id="team">
+                <h1 class="project-item-title">Team</h1>
+                <div class="project-item-content">
+                    <div class="team-content">
+                        <i class="fa-solid fa-user"></i>
+                        <div>
+                            <h5>Member 1</h5>
+                            <p>Name: Phạm hoàng Phúc</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Timeline: Các mốc thời gian mà dự án đã trải qua -->
+            <div class="project-type bg-light" id="timeline">
+                <h1 class="project-item-title">Timeline</h1>
+                <div class="project-item-content">
+                    <div class="timeline-content">
+                        <p class="timeline-number">01</p>
+                        <div>
+                            <h5>Project Start: 03/2023</h5>
+                            <p>Nghiên cứu layout trang web</p>
+                        </div>
+                    </div>
+                    <div class="timeline-content">
+                        <p class="timeline-number">02</p>
+                        <div>
+                            <h5>04/2023</h5>
+                            <p>Tạo các trang html và css liên quan</p>
+                        </div>
+                    </div>
+                    <div class="timeline-content">
+                        <p class="timeline-number">03</p>
+                        <div>
+                            <h5>05/2023</h5>
+                            <p>Lập trình JS cho trang web để lưu trữ dữ liệu</p>
+                        </div>
+                    </div>
+                    <div class="timeline-content">
+                        <p class="timeline-number">04</p>
+                        <div>
+                            <h5>06/2023</h5>
+                            <p>Test trang web</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Scope: Dự án này liên quan đến các bên nào -->
+            <div class="project-type bg-light" id="scope">
+                <h1 class="project-item-title">Scopes</h1>
+                <div class="project-item-content">
+                    <div class="scope-content">
+                        <div class="scope-in">
+                            <h4>IN</h4>
+                            <div class="scope-in-content">
+                                Lưu trữ dữ liệu và cái bài học cá nhân để thuận tiện truy cập từ bất cứ đâu
+                            </div>
+                        </div>
+                        <div class="scope-out">
+                            <h4>OUT</h4>
+                            <div class="scope-out-content">
+                                Rèn luyện các kỹ năng đã được học và lập trình nhuần nhuyễn
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Primary: Các phần được ưu tiên trong dự án (mục tiêu nào cần đạt được, chức năng nào cần làm trước) -->
+            <div class="project-type bg-light" id="primary">
+                <h1 class="project-item-title">Primary</h1>
+                <div class="project-item-content">
+                    <div class="primary-content">
+                        <i class="fa-solid fa-circle-question"></i>
+                        <p>Giải quyết được vấn đề cần thiết khi người dùng sử dụng trang web. Tạo layout phù hợp cho người dùng</p>
+                    </div>
+                    <div class="primary-content">
+                        <i class="fa-solid fa-circle-question"></i>
+                        <p>Chỉnh sửa hiển thị lỗi người dùng khi nhập sai và báo cáo trang web khi cần thiết</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="footer" class="bg-dark text-light p-2 text-center">
+        <div class="footer-content">
+            <p>Made By Hy8n</p>
+        </div>
+    </footer>
+</body>
+
+</html>

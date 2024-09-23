@@ -1,0 +1,388 @@
+* {
+    border: 0;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: "fontello", sans-serif;
+}
+
+h1, h3, h4 {
+    color: #495057;
+    word-spacing: -2px;
+}
+
+*>h1{
+    color: #ffa94d;
+}
+
+p,li,td,i {
+    color: #868e96;
+    line-height: 1.6;
+    word-spacing: -1px;
+    margin-bottom: 5px !important;
+    font-size: 16px;
+}
+
+
+li {
+    margin-bottom: none !important;
+}
+
+.bg-grey {
+    background: #f7f7f7;
+}
+
+section{
+    padding-bottom: 30px;
+}
+
+.section-title {
+    padding: 20px 0px;
+}
+
+/* Banner */
+#banner {
+    height: 60vh;
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(../images/banner.jpg);
+    background-size: cover;
+    position: relative;
+}
+
+.banner-information {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -80px);
+    color: #ebe1e1;
+}
+
+/* Navbar */
+section#nav-bar{
+    padding-bottom: 0px;
+}
+.nav-container {
+    background-color: #f5cc5df6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #f7f7f7;
+}
+
+.nav-item {
+    padding: 20px 10px;
+    border-left: 1px solid rgba(0,0,0,0.1);
+    border-right: 1px solid rgba(0,0,0,0.1);
+}
+
+/* Collapse border nav-item */
+.nav-container>:nth-child(1),
+.nav-container>:nth-child(4) {
+    border-right: none;
+}
+/* .... */
+
+/* Hình ảnh */
+.nav-myimg {
+    padding: 20px 98px;
+    position: relative;
+    border: none;
+}
+
+.nav-myimg>img{
+    position: absolute;
+    border: 1px solid white;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    width: 120px;
+    transform: translate(-50%,-50%);
+}
+/* .... */
+
+/* nav-item & hover nav-items */
+a:link, a:visited{
+    text-decoration: none;
+}
+
+a:hover, a:active{
+    transform: translateY(-3px);
+    color: #495057;
+    box-shadow: 0px 2px 5px 5px rgba(0,0,0,0.1);
+}
+
+/* Target-Information */
+.about-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    height: 500px;
+}
+
+.personal-info-link>*>i {
+    color: #199cdb;
+}
+
+#target {
+    margin-top: 25%;
+    transform: translate(0,-20%);
+    margin-left: 10%;
+    text-align: justify;
+    padding-right: 5%;
+}
+
+#target > h1 {
+    text-align: left !important;
+}
+
+#personal-info{
+    margin-top: 25%;
+    padding-left: 5%;
+    transform: translate(0,-20%);
+}
+
+#personal-info > ul {
+    list-style: none;
+    margin-left: -20px;
+}
+
+.info>*>span{
+    font-weight: 600;
+}
+
+.personal-info {
+    padding: 0px 5px;
+}
+
+/* Lý lịch */
+.job-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 20px;
+    column-gap: 20px;
+}
+
+.job-box {
+    box-shadow: 0px 0px 20px 2px rgba(0,0,0,0.1);
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 100px 500px;
+    justify-items: center;
+    align-items: center;
+}
+
+.box-content {
+    grid-column: 1/ span 2;
+    padding: 10px 20px 0px 30px;
+    height: 100%;
+    width: 100%;
+    vertical-align: top;
+}
+
+.favorite-box {
+    display: flex;
+    flex-shrink: 1;
+}
+
+.favorite {
+    width: 25%;
+    text-align: center;   
+}
+
+.favorite>i{
+    color: #199cdb;
+}
+
+/* tạo dot list bằng thuộc tính */
+.minibox {
+    width: 100%;
+    margin-bottom: 20px;
+    position: relative;
+    padding: 0px 20px;
+}
+
+.minibox::after {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    left: 0px;
+    top: 10px;
+    background-color: #199cdb;
+    border: 2px solid #ced4da;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.minibox-title {
+    margin-bottom: 10px;
+}
+
+.minibox-title>p{
+    font-style: italic;
+}
+
+/* Line level */
+.level-line-yes {
+    background: #199cdb;
+    display: inline-block;
+    height: 2px;
+    margin-right: 10px;
+    width: 45px;
+}
+.level-line-no {
+    background: #ced4da;
+    display: inline-block;
+    height: 2px;
+    margin-right: 10px;
+    width: 50px;
+}
+/* .... */
+
+.box-icon {
+    font-size: 30px;
+}
+
+.skill-content-level {
+    display: flex;
+    margin-bottom: 15px;
+    margin-top: 10;
+}
+
+/* Chứng chỉ */
+.certificate-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 100%;
+    padding-bottom: 20px;
+}
+
+.cer-minibox{
+    display: grid;
+    grid-template-columns: 4fr 3fr;
+    gap: 10px;
+    padding: 20px;
+}
+
+.cer-1 {
+    border-bottom: 1px solid #d6c08d;
+    border-right: 1px solid #d6c08d;
+}
+
+.cer-2 {
+    border-bottom: 1px solid #d6c08d;
+}
+
+.cer-minibox>img {
+    width: 100%;
+    border: 1px solid rgba(0,0,0,0.1);
+}
+
+.cer-content>h4 {
+    text-transform: uppercase;
+}
+
+/* Project */
+.project-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.pj {
+    box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.1);
+    border: 1px solid rgba(0,0,0,0.3);
+}
+
+.pj-image {
+    width: 100%;
+    border-bottom: 1px solid rgba(0,0,0,0.3);
+}
+
+.pj-name {
+    padding: 10px;
+    border-bottom: 1px solid rgba(0,0,0,0.3);
+    border-top: none;
+    font-weight: 600;
+}
+
+.pj-info {
+    padding: 10px;
+    border-bottom: 1px solid rgba(0,0,0,0.3);
+    border-top: none;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.pj-info>*:first-child {
+    font-style: italic;
+}
+
+.pj-info-year{
+    padding: 4px 8px;
+    background-color: #199cdb;
+    border-radius: 100px;
+    color: #f7f7f7;
+}
+
+.pj-details{
+    border-top: none;
+    height: 200px;
+}
+
+table, tr {
+    border-collapse: collapse;
+}
+
+td {
+    padding: 15px 10px;
+    vertical-align: top;
+}
+
+/* Footer */
+.footer-container {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0px;
+    gap: 20px;
+}
+
+a{
+    text-decoration: none;
+    color: #495057;
+}
+
+.contact>*>i{
+    color: #1c7ed6;
+}
+
+body{
+    position: relative;
+}
+
+.button-to-up {
+    position: fixed;
+    right: 5%;
+    bottom: 5%;
+    padding: 12px;
+}
+
+.button-to-up>svg{
+    height: 2rem;
+    color: #ffa94d;
+}
+
+/* Xem thêm dự án */
+.pj {
+    position: relative;
+}
+
+.pj-more-info {
+    position: absolute;
+    top: 1%;
+    right: 1%;
+    padding: 2% 4%;
+}
+.pj-more-info>i{
+    color: #fc992f;
+    font-size: 2rem;
+}

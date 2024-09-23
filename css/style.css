@@ -1,0 +1,410 @@
+* {
+    border: 0;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: "fontello", sans-serif;
+}
+
+
+
+/* 
+Màu text: #868e96
+màu heading:  #495057
+*/
+
+h1, h3, h4 {
+    color: #495057;
+}
+p {
+    color: #868e96;
+}
+
+/* section > .container{
+    width: 1170px;
+    margin: auto;
+    display: block;
+
+    padding: 30px 50px;
+} */
+
+/* #nav-bar {
+    text-align: center;
+} */
+
+/* solve */
+body {
+    display: block;
+    width: 1170px;
+    margin: auto;
+}
+.box-title {
+    margin: 20px 0px;
+}
+
+.bg-grey {
+    /* width: 1170px;
+    margin: auto; */
+    background: #f7f7f7;
+}
+
+/* body {
+    margin-left: 25%;
+    margin-right: 25%;
+} */
+
+/* banner */
+#banner {
+    height: 60vh;
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(../images/banner.jpg);
+    background-size: cover;
+    position: relative;
+}
+
+.banner-information {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -80px);
+    color: #ebe1e1;
+}
+
+/* nav bar */
+/* xoá giá trị margin container */
+
+.nav-container {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+}
+
+.nav-link {
+    text-decoration: none;
+    border-left: 1px solid rgba(0,0,0,0.1);
+    border-right: 1px solid rgba(0,0,0,0.1);
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.link-info>p , .link-info>a {
+    display: inline-block;
+}
+
+.nav-link>a {
+    padding: 20px;
+}
+
+a.link-info:hover, p.link-info:hover {
+    background-color: #199cdb;
+    color: #f7f7f7;
+    z-index: 0;
+}
+
+.nav-myimg {
+    padding: 0px 100px;
+    position: relative;
+}
+
+.nav-myimg>img {
+    position: absolute;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    width: 120px;
+    transform: translate(-50%,-50%);
+}
+
+
+
+
+
+
+/* Target - Information */
+.about-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center ;
+}
+
+
+/* Giá trị ghi đè do level cao hơn */
+/* .container.about-container {
+    margin: 0px 0px 30px 0px;
+} */
+#about.bg-grey{
+    /* margin: 0px 20px; */
+    box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.2);
+}
+
+#target {
+    padding: 30px;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+#personal-info {
+    padding: 30px;
+    font-size: 18px;
+    line-height: 1.6;
+    /* box-shadow: 0px 0px 20px 5px rgba(0,0,0,0.1) ; */
+    border-left: 1px solid rgba(0,0,0,0.1);
+}
+
+
+.mt-40{
+    list-style: none;
+    padding-inline-start: 0px;
+    color: #868e96;
+}
+
+#personal-info>.personal-info-link {
+    padding-top: 20px;
+}
+
+/* job-info */
+.job-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.job-box {
+    /* border: 1px solid rgba(0,0,0,0.1); */
+    box-shadow: 0px 0px 20px 2px rgba(0,0,0,0.1);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    align-items: center;
+    /* justify-content: center; */
+    height: 100%;
+    /* padding: 0px 40px 20px 40px; */
+    padding: 10px;
+    row-gap: 10px;
+}
+
+.box-icon, .box-title {
+    text-align: center;
+}
+
+
+.box-title {
+    grid-column: 1 / span 3;
+    /* margin-bottom: 20px; */
+}
+
+
+
+/* Xử lý nội dung của phần kinh nghiêm - học vấn - hoạt động */
+.box-content {
+    margin-left: 10px;
+    grid-column: 1 / -1;
+    grid-row: 2 / -1;
+    /* align-self: start; */
+    /* background-color: aqua; */
+    height: 100%;
+}
+
+    /* Xử lý minibox */
+
+.minibox {
+    width: 100%;
+    margin-bottom: 20px;
+    position: relative;
+    padding: 0px 20px;
+}
+
+.minibox::after {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    left: 0px;
+    top: 8px;
+    background-color: #199cdb;
+    border: 2px solid #ced4da;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.minibox-title {
+    line-height: 1.2;
+    word-spacing: -1px;
+    margin-bottom: 10px;
+}
+.minibox-title>p {
+    font-style: italic;
+}
+
+
+.minibox-content {
+    line-height: 1.6;
+}
+
+/* Favorite */
+.favorite-box {
+    display: grid;
+    grid-template-columns: repeat(4 , 1fr);
+}
+
+.favorite {
+    text-align: center;
+    line-height: 1.6;
+}
+
+.favorite>i {
+    border: 2px solid black;
+    padding: 2px;
+    border-radius: 50%;
+}
+
+
+
+/* Xử lý css phần kỹ năng và ngôn ngữ */
+.level-line-yes {
+    background: #199cdb;
+    display: inline-block;
+    height: 2px;
+    margin-right: 10px;
+    width: 45px;
+}
+.level-line-no {
+    background: #ced4da;
+    display: inline-block;
+    height: 2px;
+    margin-right: 10px;
+    width: 45px;
+}
+
+
+
+/* Xử lý certificate */
+
+.certificate-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    padding: 0px 20px
+}
+
+.cer-minibox {
+    display: flex;
+    flex-wrap: wrap;
+    /* gap: ; */
+}
+
+.cer-minibox > img {
+    width: 50%;
+    height: auto;
+    box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.1);
+}
+
+.cer-minibox > .cer-content {
+    width: 50%;
+    display: inline-block;
+    padding: 10px 14px;
+}
+
+.cer-content > h4 {
+    text-transform: uppercase;
+    word-spacing: -1px;
+    margin-bottom: 5px;
+}
+
+.cer-content > p {
+    line-height: 1.2;
+}
+
+/* tạo đường gạch mã màu #d6c08d */
+.cer-1 {
+    padding: 20px;
+    border-bottom: 1px solid #d6c08d;
+}
+.cer-2 {
+    padding: 20px;
+    border-bottom: 1px solid #d6c08d;
+    border-left: 1px solid #d6c08d;
+}
+.cer-3 {
+    padding: 20px;
+}
+
+/* Dự án */
+.pj > img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border: 1px solid rgba(0,0,0,0.1);
+}
+
+.project-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 40px;
+    column-gap: 20px;
+}
+
+.pj-name {
+    padding: 14px 10px;
+    border: 1px solid rgba(0,0,0,0.1);
+    text-transform: uppercase;
+    font-weight: 600;
+    border-bottom: none;
+    letter-spacing: -0.9px;
+    color: #495057;
+}
+
+.pj-info {
+    display: flex;
+    gap: 20px;
+    padding: 14px 10px;
+    border: 1px solid rgba(0,0,0,0.1);
+    align-items: center;
+    color: #868e96;
+    border-bottom: none;
+}
+
+.pj-info-year{
+    padding: 4px 8px;
+    background-color: #199cdb;
+    border-radius: 100px;
+    color: #f7f7f7;
+}
+
+.pj-details {
+    color: #868e96;
+}
+
+table, tr {
+    border: 1px solid rgba(0,0,0,0.1);
+    border-collapse: collapse;
+}
+
+td {
+    padding: 15px 10px;
+    vertical-align: top;
+}
+
+
+
+/* Footer */
+.footer-container {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0px;
+    gap: 20px;
+}
+
+a{
+    text-decoration: none;
+    color: #495057;
+}
+
+/* set title cho cả body */
+.section-title {
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+
